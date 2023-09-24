@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tracks</title>
 </head>
 <body>
-$END$
+    <h1>List of Tracks</h1>
+    <ul>
+        {% for track in tracks %}
+            <li>{{ track.id }} | {{ track.artist }} | {{ track.length_trak }} (sec) | {{ track.release_date }} (y.m.d)</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
