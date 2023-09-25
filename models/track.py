@@ -1,4 +1,13 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Track:
+
+    id: int
+    artist: str
+    length_trak: float
+    release_date: str
 
     def __init__(self, id, artist, length_trak, release_date):
         self.id = id
